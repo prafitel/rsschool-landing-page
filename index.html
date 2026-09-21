@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="./assets/coffee-cup-icon.svg">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./index.js" defer></script>
   <title>Coffee House</title>
 </head>
 <body>
@@ -19,16 +21,16 @@
           <nav class="header__nav nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="/" class="nav__link">Favorite coffee</a>
+                <a href="./#favorite" class="nav__link">Favorite coffee</a>
               </li>
               <li class="nav__item">
-                <a href="/" class="nav__link">About</a>
+                <a href="./#about" class="nav__link">About</a>
               </li>
               <li class="nav__item">
-                <a href="/" class="nav__link">Mobile app</a>
+                <a href="./#mobile_app" class="nav__link">Mobile app</a>
               </li>
               <li class="nav__item">
-                <a href="/" class="nav__link">Contact us</a>
+                <a href="./#contact_us" class="nav__link">Contact us</a>
               </li>
             </ul>
           </nav>
@@ -66,13 +68,13 @@
             beverage.
           </p>
 
-          <button type="button" class="offer__btn primary-btn">
+          <a href="./category.html" class="offer__btn primary-btn">
             Menu
-          </button>
+          </a>
         </div>
       </section>
 
-      <section class="main__slider">
+      <section id="favorite" class="main__slider">
         <div class="slider">
           <h2 class="slider__title">
             Choose your 
@@ -106,7 +108,7 @@
         </div>
       </section>
 
-      <section class="about__section">
+      <section id="about" class="about__section">
         <h3 class="about__description">
           Resource is 
           <span class="text-accent">
@@ -123,7 +125,7 @@
         </div>
       </section>
 
-      <section class="download__section">
+      <section id="mobile_app" class="download__section">
         <div class="download__wrapper">
           <div class="download__info">
             <h3 class="download__title">
@@ -135,17 +137,17 @@
 
             <div class="download__buttons">
               <button type="button" class="download__button">
-                <div class="download__button-apple">
+                <span class="download__button-apple">
                   <span>Available on the</span>
                   <span>App Store</span>
-                </div>
+                </span>
               </button>
-              
+
               <button type="button" class="download__button">
-                <div class="download__button-android">
+                <span class="download__button-android">
                   <span>Available on the</span>
                   <span>Google Play</span>
-                </div>
+                </span>
               </button>
             </div>
           </div>
@@ -156,9 +158,35 @@
     </div>    
   </main>
 
-  <footer class="footer">
+  <footer id="contact_us" class="footer">
     <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__content">
+          <div class="footer__media">
+            <h3 class="footer__title">
+              Sip, Savor, Smile.
+              <span class="text-accent">
+                It’s coffee time!
+              </span>
+            </h3>
 
+            <div class="footer__socials">
+              <a href="https://www.x.com" target="_blank" class="footer__socials-twitter"></a>
+              <a href="https://www.instagram.com" target="_blank" class="footer__socials-instagram"></a>
+              <a href="https://www.facebook.com" target="_blank" class="footer__socials-facebook"></a>
+            </div>
+          </div>
+
+          <div class="footer__contacs">
+            <span class="footer__heading">Contact us</span>
+            <div class="footer__info">
+              <a href="https://www.google.com/maps/search/8558+Green+Rd.,+LA/@48.5137282,-122.3373886,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" rel="noopener noreferrer" target="_blank" class="footer__info-geo">8558 Green Rd., LA</a>
+              <a href="tel:+16035550123" class="footer__info-phone">+1 (603) 555-0123</a>
+              <span class="footer__info-timezone">Mon–Sat: 9:00–23:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
