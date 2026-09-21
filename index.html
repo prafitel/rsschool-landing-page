@@ -12,37 +12,35 @@
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-          <div class="header__logo">
-            <a href="/" class="header__logo-link">
-              <img src="./assets/main-logo.webp" alt="Coffee house logo" class="header__logo-image">
-            </a>
-          </div>
+          <a href="/" class="header__logo">
+            <img src="./assets/main-logo.webp" alt="Coffee house logo" class="header__logo-img">
+          </a>
 
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li class="header__nav-item">
-                <a href="/" class="header__nav-link">Favorite coffee</a>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="/" class="nav__link">Favorite coffee</a>
               </li>
-              <li class="header__nav-item">
-                <a href="/" class="header__nav-link">About</a>
+              <li class="nav__item">
+                <a href="/" class="nav__link">About</a>
               </li>
-              <li class="header__nav-item">
-                <a href="/" class="header__nav-link">Mobile app</a>
+              <li class="nav__item">
+                <a href="/" class="nav__link">Mobile app</a>
               </li>
-              <li class="header__nav-item">
-                <a href="/" class="header__nav-link">Contact us</a>
+              <li class="nav__item">
+                <a href="/" class="nav__link">Contact us</a>
               </li>
             </ul>
           </nav>
 
           <div class="header__panel">
             <div class="header__theme">
-              <div class="header__theme-light theme-active"></div>
-              <div class="header__theme-dark"></div>
+              <div class="header__theme-item header__theme-item_light header__theme_active"></div>
+              <div class="header__theme-item header__theme-item_dark"></div>
             </div>
 
-            <div class="header__burger">
-              <button type="button" class="header__burger-btn">
+            <div class="header__burger burger">
+              <button type="button" class="burger__btn">
                 Menu
               </button>
             </div>
@@ -53,22 +51,68 @@
 
   <main class="main">
     <div class="container">
-      <section>
-        <div>
-          <h1>Enjoy premium coffee at our charming cafe</h1>
-          <p>
+      <section class="main__offer">
+        <div class="offer__wrapper offer">
+          <h1 class="offer__title">
+            <span class="offer__title_accent text-accent">
+              Enjoy
+            </span> 
+            premium coffee at our charming cafe
+          </h1>
+
+          <p class="offer__text">
             With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular 
             destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite 
             beverage.
           </p>
-          <button type="button">
+
+          <button type="button" class="offer__btn primary-btn">
             Menu
           </button>
         </div>
       </section>
-      <section></section>
-      <section></section>
-      <section></section>
+
+      <section class="main__slider">
+        <div class="slider">
+          <h2 class="slider__title">
+            Choose your 
+              <span class=" text-accent">favorite</span> 
+            coffee
+          </h2>
+
+          <div class="slider__wrapper">
+            <button type="button" class="slider__btn slider__btn_left"></button>
+            
+            <div class="slider__list">
+              <div class="slider__item">
+                <img src="./assets/coffee-slider-1.webp" alt="S’mores Frappuccino price" class="slider__preview">
+
+                <div class="slider__info">
+                  <h3 class="slider__heading">S’mores Frappuccino</h3>
+                  <p class="slider__description">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                  <span class="slider__price">$5.50</span>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="slider__btn slider__btn_right"></button>
+          </div>
+
+          <div class="slider__pagination pagination">
+            <span class="pagination__item pagination__item_active"></span>
+            <span class="pagination__item"></span>
+            <span class="pagination__item"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__section">
+
+      </section>
+
+      <section class="main__section">
+
+      </section>
     </div>    
   </main>
 
