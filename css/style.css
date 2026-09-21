@@ -9,6 +9,7 @@
   --slider-btns-color: #665F55;
   --pagination-color: #C1B6AD;
   --pagination-color-active: #665F55;
+  --download-btns-color: #665f55;
 
   --transition-primary: all .2s ease;
 }
@@ -412,4 +413,106 @@ body {
 
 .about__preview:nth-child(4) {
   grid-area: right-bottom;
+}
+
+/* download section */
+
+.download__section {
+  margin-top: 100px;
+}
+
+.download__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download__info {
+  width: 630px;
+  height: 342px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.download__title {
+  font-family: 'Inter Semi Bold', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 125%;
+  color: var(--text-primary);
+}
+
+.download__preview {
+  max-width: 615px;
+}
+
+.download__description {
+  font-family: 'Inter Regular', sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.download__buttons {
+  width: 420px;
+  height: 64px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.download__button {
+  width: 200px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  
+  border: 2px solid var(--download-btns-color);
+  border-radius: 100px;
+
+  padding-left: 20px;
+}
+
+.download__button-apple, .download__button-android {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.download__button:has(.download__button-apple)::before, .download__button:has(.download__button-android)::before {
+  content: '';
+
+  display: flex;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  width: 36px;
+  height: 36px;
+}
+
+.download__button:has(.download__button-apple)::before {
+  background-image: url('../assets/apple-icon.svg');
+}
+
+.download__button:has(.download__button-android)::before {
+  background-image: url('../assets/google-play-icon.svg');
+}
+
+.download__button span:nth-child(1) {
+  font-family: 'Inter Semi Bold', sans-serif;
+  line-height: 140%;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.download__button span:nth-child(2) {
+  font-family: 'Inter Semi Bold', sans-serif;
+  line-height: 150%;
+  font-weight: bold;
+  font-size: 16px;
 }
