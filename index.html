@@ -3,33 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Coffee House</title>
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="container">
-      <div></div>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <div></div>
+      <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="/" class="header__logo-link">
+              <img src="./assets/main-logo.webp" alt="Coffee house logo" class="header__logo-image">
+            </a>
+          </div>
+
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="/" class="header__nav-link">Favorite coffee</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/" class="header__nav-link">About</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/" class="header__nav-link">Mobile app</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/" class="header__nav-link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__panel">
+            <div class="header__theme">
+              <div class="header__theme-light theme-active"></div>
+              <div class="header__theme-dark"></div>
+            </div>
+
+            <div class="header__burger">
+              <button type="button" class="header__burger-btn">
+                Menu
+              </button>
+            </div>
+          </div>
+      </div>
     </div>
   </header>
 
-  <main>
+  <main class="main">
     <div class="container">
-      <section></section>
+      <section>
+        <div>
+          <h1>Enjoy premium coffee at our charming cafe</h1>
+          <p>
+            With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular 
+            destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite 
+            beverage.
+          </p>
+          <button type="button">
+            Menu
+          </button>
+        </div>
+      </section>
       <section></section>
       <section></section>
       <section></section>
     </div>    
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="container">
 
     </div>

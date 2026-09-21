@@ -1,0 +1,151 @@
+
+:root {
+  --text-primary: #403f3d;
+  --main-bg: #e1d4c9;
+  --text-link-hover: #b0907a;
+  --switcher-border: #c1b6ad;
+  --switcher-active: #b0907a;
+
+  --transition-primary: all .2s ease;
+}
+
+:root.theme__dark {
+  --text-primary: #fff;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.2;
+
+  background-color: var(--main-bg);
+}
+
+.header, .main, .footer {
+  margin: 0 40px;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 20px;
+}
+
+.header__wrapper {
+  height: 60px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 100px;
+}
+
+.header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.header__nav-item {
+  font-family: 'Inter Semi Bold', sans-serif;
+  line-height: 150%;
+  font-weight: bold;
+}
+
+.header__nav-link {
+  color: var(--text-primary);
+  transition: var(--transition-primary);
+}
+
+.header__nav-link:hover {
+  color: var(--text-link-hover);
+}
+
+.header__panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 184px;
+  width: 100%;
+}
+
+.header__theme {
+  width: 88px;
+  height: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
+  border: 2px solid var(--switcher-border);
+  border-radius: 22px;
+
+  padding: 3px;
+}
+
+.header__theme-light, .header__theme-dark {
+  cursor: pointer;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 18px;
+
+  display: flex;
+  
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  transition: var(--transition-primary);
+}
+
+.header__theme-light {
+  background-image: url('../assets/sun-icon.svg');
+}
+
+.header__theme-dark {
+  background-image: url('../assets/moon-icon.svg');
+}
+
+.theme-active {
+  background-color: var(--switcher-active);
+}
+
+.header__theme div:not(.is-active):hover {
+  background-color: var(--switcher-active);
+}
+
+.header__burger-btn {
+  font-weight: bold;
+
+  color: var(--text-primary);
+
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+
+}
+
+.header__burger-btn::after {
+  content: '';
+
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../assets/coffee-cup-icon.svg');
+}
