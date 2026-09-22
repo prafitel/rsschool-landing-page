@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="./assets/coffee-cup-icon.svg">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./index.js" defer></script>
+  <title>Coffee House</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+          <a href="/" class="header__logo">
+            <img src="./assets/main-logo.webp" alt="Coffee house logo" class="header__logo-img">
+          </a>
+
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./#favorite" class="nav__link">Favorite coffee</a>
+              </li>
+              <li class="nav__item">
+                <a href="./#about" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="./#mobile_app" class="nav__link">Mobile app</a>
+              </li>
+              <li class="nav__item">
+                <a href="./#contact_us" class="nav__link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__panel">
+            <div class="header__theme">
+              <div class="header__theme-item header__theme-item_light header__theme_active"></div>
+              <div class="header__theme-item header__theme-item_dark"></div>
+            </div>
+
+            <div class="header__burger burger">
+              <button type="button" class="burger__btn">
+                Menu
+              </button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <section class="main__offer">
+        <div class="offer__wrapper offer">
+          <h1 class="offer__title">
+            <span class="offer__title_accent text-accent">
+              Enjoy
+            </span> 
+            premium coffee at our charming cafe
+          </h1>
+
+          <p class="offer__text">
+            With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular 
+            destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite 
+            beverage.
+          </p>
+
+          <a href="./category.html" class="offer__btn primary-btn">
+            Menu
+          </a>
+        </div>
+      </section>
+
+      <section id="favorite" class="main__slider">
+        <div class="slider">
+          <h2 class="slider__title">
+            Choose your 
+              <span class="text-accent">favorite</span> 
+            coffee
+          </h2>
+
+          <div class="slider__wrapper">
+            <button type="button" class="slider__btn slider__btn_left"></button>
+            
+            <div class="slider__list">
+              <div class="slider__item">
+                <img src="./assets/coffee-slider-1.webp" alt="S’mores Frappuccino price" class="slider__preview">
+
+                <div class="slider__info">
+                  <h3 class="slider__heading">S’mores Frappuccino</h3>
+                  <p class="slider__description">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                  <span class="slider__price">$5.50</span>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="slider__btn slider__btn_right"></button>
+          </div>
+
+          <div class="slider__pagination pagination">
+            <span class="pagination__item pagination__item_active"></span>
+            <span class="pagination__item"></span>
+            <span class="pagination__item"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about__section">
+        <h3 class="about__description">
+          Resource is 
+          <span class="text-accent">
+            the perfect and cozy place
+          </span>
+          where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.
+        </h3>
+        
+        <div class="about_wrapper">
+          <img src="./assets/about-1.webp" alt="Drink best coffee in coffee house" class="about__preview">
+          <img src="./assets/about-2.webp" alt="Best rest in coffee house with cup of coffee" class="about__preview">
+          <img src="./assets/about-3.webp" alt="Remote work with best coffee in coffee House" class="about__preview">
+          <img src="./assets/about-4.webp" alt="Date in cofee house" class="about__preview">
+        </div>
+      </section>
+
+      <section id="mobile_app" class="download__section">
+        <div class="download__wrapper">
+          <div class="download__info">
+            <h3 class="download__title">
+              <span class="text-accent">
+                Download
+              </span>
+              our app to start ordering</h3>
+            <p class="download__description">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
+
+            <div class="download__buttons">
+              <button type="button" class="download__button">
+                <span class="download__button-apple">
+                  <span>Available on the</span>
+                  <span>App Store</span>
+                </span>
+              </button>
+
+              <button type="button" class="download__button">
+                <span class="download__button-android">
+                  <span>Available on the</span>
+                  <span>Google Play</span>
+                </span>
+              </button>
+            </div>
+          </div>
+          
+          <img src="./assets/mobile-screens.webp" alt="" class="download__preview">
+        </div>
+      </section>
+    </div>    
+  </main>
+
+  <footer id="contact_us" class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__content">
+          <div class="footer__media">
+            <h3 class="footer__title">
+              Sip, Savor, Smile.
+              <span class="text-accent">
+                It’s coffee time!
+              </span>
+            </h3>
+
+            <div class="footer__socials">
+              <a href="https://www.x.com" target="_blank" class="footer__socials-twitter"></a>
+              <a href="https://www.instagram.com" target="_blank" class="footer__socials-instagram"></a>
+              <a href="https://www.facebook.com" target="_blank" class="footer__socials-facebook"></a>
+            </div>
+          </div>
+
+          <div class="footer__contacs">
+            <span class="footer__heading">Contact us</span>
+            <div class="footer__info">
+              <a href="https://www.google.com/maps/search/8558+Green+Rd.,+LA/@48.5137282,-122.3373886,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" rel="noopener noreferrer" target="_blank" class="footer__info-geo">8558 Green Rd., LA</a>
+              <a href="tel:+16035550123" class="footer__info-phone">+1 (603) 555-0123</a>
+              <span class="footer__info-timezone">Mon–Sat: 9:00–23:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="./assets/coffee-cup-icon.svg">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./index.js" defer></script>
+  <title>Coffee House</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+          <a href="/" class="header__logo">
+            <img src="./assets/main-logo.webp" alt="Coffee house logo" class="header__logo-img">
+          </a>
+
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./#favorite" class="nav__link">Favorite coffee</a>
+              </li>
+              <li class="nav__item">
+                <a href="./#about" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="./#mobile_app" class="nav__link">Mobile app</a>
+              </li>
+              <li class="nav__item">
+                <a href="./#contact_us" class="nav__link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__panel">
+            <div class="header__theme">
+              <div class="header__theme-item header__theme-item_light header__theme_active"></div>
+              <div class="header__theme-item header__theme-item_dark"></div>
+            </div>
+
+            <div class="header__burger burger">
+              <button type="button" class="burger__btn">
+                Menu
+              </button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main__category">
+    <div class="container">
+      <h1 class="main__title">
+        Behind each of our cups hides an 
+        <span class="text-accent">
+          amazing surprise
+        </span>
+      </h1>
+
+      <div class="category__wrapper">
+        <div class="categories">
+          <button type="button" class="categories__item categories__item_active">
+            <span class="categories__item-wrapper">
+              <span class="categories__item-coffee"></span>
+            </span>
+            Coffee
+          </button>
+          <button type="button" class="categories__item">
+            <span class="categories__item-wrapper">
+              <span class="categories__item-tea"></span>
+            </span>
+            Tea
+          </button>
+          <button type="button" class="categories__item">
+            <span class="categories__item-wrapper">
+              <span class="categories__item-desert"></span>
+            </span>
+            Dessert
+          </button>
+        </div>
+
+        <div class="categories__list">
+          <div class="categories__card">
+            <img src="./assets/coffee-1.webp" alt="Irish coffee" class="categories__preview">
+            <div class="categories__info">
+              <h2 class="categories__title">Irish coffee</h2>
+              <p class="categories__description">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+              <span class="categories__price">$7.00</span>
+            </div>
+          </div>
+
+          <div class="categories__card">
+            <img src="./assets/coffee-2.webp" alt="Kahlua coffee" class="categories__preview">
+            <div class="categories__info">
+              <h2 class="categories__title">Kahlua coffee</h2>
+              <p class="categories__description">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
+              <span class="categories__price">$7.00</span>
+            </div>
+          </div>
+
+          <div class="categories__card">
+            <img src="./assets/coffee-3.webp" alt="Honey raf" class="categories__preview">
+            <div class="categories__info">
+              <h2 class="categories__title">Honey raf</h2>
+              <p class="categories__description">Espresso with frothed milk, cream and aromatic honey</p>
+              <span class="categories__price">$5.50</span>
+            </div>
+          </div>
+
+          <div class="categories__card">
+            <img src="./assets/coffee-4.webp" alt="Ice cappuccino" class="categories__preview">
+            <div class="categories__info">
+              <h2 class="categories__title">Ice cappuccino</h2>
+              <p class="categories__description">Cappuccino with soft thick foam in summer version with ice</p>
+              <span class="categories__price">$5.00</span>
+            </div>
+          </div>
+
+          <div class="categories__card">
+            <img src="./assets/coffee-5.webp" alt="Espresso" class="categories__preview">
+            <div class="categories__info">
+              <h2 class="categories__title">Espresso</h2>
+              <p class="categories__description">Classic black coffee</p>
+              <span class="categories__price">$4.50</span>
+            </div>
+          </div>
+
+          <div class="categories__card">
+            <img src="./assets/coffee-6.webp" alt="Latte" class="categories__preview">
+            <div class="categories__info">
+              <h2 class="categories__title">Latte</h2>
+              <p class="categories__description">Espresso coffee with the addition of steamed milk and dense milk foam</p>
+              <span class="categories__price">$5.50</span>
+            </div>
+          </div>
+
+          <div class="categories__card">
+            <img src="./assets/coffee-7.webp" alt="Latte macchiato" class="categories__preview">
+            <div class="categories__info">
+              <h2 class="categories__title">Latte macchiato</h2>
+              <p class="categories__description">Espresso with frothed milk and chocolate</p>
+              <span class="categories__price">$5.50</span>
+            </div>
+          </div>
+
+          <div class="categories__card">
+            <img src="./assets/coffee-8.webp" alt="Coffee with cognac" class="categories__preview">
+            <div class="categories__info">
+              <h2 class="categories__title">Coffee with cognac</h2>
+              <p class="categories__description">Fragrant black coffee with cognac and whipped cream</p>
+              <span class="categories__price">$6.50</span>
+            </div>
+          </div>
+
+          <div class="categories__load">
+            <span class="categories__load-img"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="contact_us" class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__content">
+          <div class="footer__media">
+            <h3 class="footer__title">
+              Sip, Savor, Smile.
+              <span class="text-accent">
+                It’s coffee time!
+              </span>
+            </h3>
+
+            <div class="footer__socials">
+              <a href="https://www.x.com" target="_blank" class="footer__socials-twitter"></a>
+              <a href="https://www.instagram.com" target="_blank" class="footer__socials-instagram"></a>
+              <a href="https://www.facebook.com" target="_blank" class="footer__socials-facebook"></a>
+            </div>
+          </div>
+
+          <div class="footer__contacs">
+            <span class="footer__heading">Contact us</span>
+            <div class="footer__info">
+              <a href="https://www.google.com/maps/search/8558+Green+Rd.,+LA/@48.5137282,-122.3373886,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" rel="noopener noreferrer" target="_blank" class="footer__info-geo">8558 Green Rd., LA</a>
+              <a href="tel:+16035550123" class="footer__info-phone">+1 (603) 555-0123</a>
+              <span class="footer__info-timezone">Mon–Sat: 9:00–23:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
