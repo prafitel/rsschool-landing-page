@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/modal.css">
   <script src="./index.js" defer></script>
+  <script src="./burger.js" defer></script>
+  <script type="module" src="./products.js" defer></script>
   <title>Coffee House</title>
 </head>
 <body>
@@ -45,6 +48,7 @@
               <button type="button" class="burger__btn">
                 Menu
               </button>
+              <button type="button" class="burger__menu"></button>
             </div>
           </div>
       </div>
@@ -62,19 +66,19 @@
 
       <div class="category__wrapper">
         <div class="categories">
-          <button type="button" class="categories__item categories__item_active">
+          <button type="button" class="categories__item categories__item_active" data-category="coffee">
             <span class="categories__item-wrapper">
               <span class="categories__item-coffee"></span>
             </span>
             Coffee
           </button>
-          <button type="button" class="categories__item">
+          <button type="button" class="categories__item" data-category="tea">
             <span class="categories__item-wrapper">
               <span class="categories__item-tea"></span>
             </span>
             Tea
           </button>
-          <button type="button" class="categories__item">
+          <button type="button" class="categories__item" data-category="dessert">
             <span class="categories__item-wrapper">
               <span class="categories__item-desert"></span>
             </span>
@@ -82,82 +86,10 @@
           </button>
         </div>
 
-        <div class="categories__list">
-          <div class="categories__card">
-            <img src="./assets/coffee-1.webp" alt="Irish coffee" class="categories__preview">
-            <div class="categories__info">
-              <h2 class="categories__title">Irish coffee</h2>
-              <p class="categories__description">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
-              <span class="categories__price">$7.00</span>
-            </div>
-          </div>
+        <div class="categories__list"></div>
 
-          <div class="categories__card">
-            <img src="./assets/coffee-2.webp" alt="Kahlua coffee" class="categories__preview">
-            <div class="categories__info">
-              <h2 class="categories__title">Kahlua coffee</h2>
-              <p class="categories__description">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
-              <span class="categories__price">$7.00</span>
-            </div>
-          </div>
-
-          <div class="categories__card">
-            <img src="./assets/coffee-3.webp" alt="Honey raf" class="categories__preview">
-            <div class="categories__info">
-              <h2 class="categories__title">Honey raf</h2>
-              <p class="categories__description">Espresso with frothed milk, cream and aromatic honey</p>
-              <span class="categories__price">$5.50</span>
-            </div>
-          </div>
-
-          <div class="categories__card">
-            <img src="./assets/coffee-4.webp" alt="Ice cappuccino" class="categories__preview">
-            <div class="categories__info">
-              <h2 class="categories__title">Ice cappuccino</h2>
-              <p class="categories__description">Cappuccino with soft thick foam in summer version with ice</p>
-              <span class="categories__price">$5.00</span>
-            </div>
-          </div>
-
-          <div class="categories__card">
-            <img src="./assets/coffee-5.webp" alt="Espresso" class="categories__preview">
-            <div class="categories__info">
-              <h2 class="categories__title">Espresso</h2>
-              <p class="categories__description">Classic black coffee</p>
-              <span class="categories__price">$4.50</span>
-            </div>
-          </div>
-
-          <div class="categories__card">
-            <img src="./assets/coffee-6.webp" alt="Latte" class="categories__preview">
-            <div class="categories__info">
-              <h2 class="categories__title">Latte</h2>
-              <p class="categories__description">Espresso coffee with the addition of steamed milk and dense milk foam</p>
-              <span class="categories__price">$5.50</span>
-            </div>
-          </div>
-
-          <div class="categories__card">
-            <img src="./assets/coffee-7.webp" alt="Latte macchiato" class="categories__preview">
-            <div class="categories__info">
-              <h2 class="categories__title">Latte macchiato</h2>
-              <p class="categories__description">Espresso with frothed milk and chocolate</p>
-              <span class="categories__price">$5.50</span>
-            </div>
-          </div>
-
-          <div class="categories__card">
-            <img src="./assets/coffee-8.webp" alt="Coffee with cognac" class="categories__preview">
-            <div class="categories__info">
-              <h2 class="categories__title">Coffee with cognac</h2>
-              <p class="categories__description">Fragrant black coffee with cognac and whipped cream</p>
-              <span class="categories__price">$6.50</span>
-            </div>
-          </div>
-
-          <div class="categories__load">
-            <span class="categories__load-img"></span>
-          </div>
+        <div class="categories__load">
+          <span class="categories__load-img"></span>
         </div>
       </div>
     </div>
@@ -194,5 +126,11 @@
       </div>
     </div>
   </footer>
+  <dialog class="modal">
+    <div class="modal__wrapper">
+      <div class="modal__content"></div>
+    </div>
+  </dialog>
+</div>
 </body>
 </html>

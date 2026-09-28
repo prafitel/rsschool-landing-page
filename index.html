@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/modal.css">
   <script src="./index.js" defer></script>
+  <script src="./burger.js" defer></script>
+  <script src="./slider.js" defer></script>
   <title>Coffee House</title>
 </head>
 <body>
@@ -45,6 +48,7 @@
               <button type="button" class="burger__btn">
                 Menu
               </button>
+              <button type="button" class="burger__menu"></button>
             </div>
           </div>
       </div>
@@ -83,27 +87,47 @@
           </h2>
 
           <div class="slider__wrapper">
-            <button type="button" class="slider__btn slider__btn_left"></button>
+            <button type="button" class="slider__btn slider__btn_left" data-action="prev"></button>
             
             <div class="slider__list">
-              <div class="slider__item">
-                <img src="./assets/coffee-slider-1.webp" alt="S’mores Frappuccino price" class="slider__preview">
-
-                <div class="slider__info">
-                  <h3 class="slider__heading">S’mores Frappuccino</h3>
-                  <p class="slider__description">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
-                  <span class="slider__price">$5.50</span>
+              <div class="slider__track">
+                <div class="slider__item">
+                  <img src="./assets/coffee-slider-1.webp" alt="S’mores Frappuccino" class="slider__preview">
+                  <div class="slider__info">
+                    <h3 class="slider__heading">S’mores Frappuccino</h3>
+                    <p class="slider__description">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                    <span class="slider__price">$5.50</span>
+                  </div>
                 </div>
+
+                <div class="slider__item">
+                  <img src="./assets/coffee-slider-2.webp" alt="Caramel Macchiato" class="slider__preview">
+                  <div class="slider__info">
+                    <h3 class="slider__heading">Caramel Macchiato</h3>
+                    <p class="slider__description">A delicious blend of rich espresso, creamy milk, and sweet caramel syrup, topped with whipped cream.</p>
+                    <span class="slider__price">$5.00</span>
+                  </div>
+                </div>
+
+                <div class="slider__item">
+                  <img src="./assets/coffee-slider-3.webp" alt="Ice Coffee" class="slider__preview">
+                  <div class="slider__info">
+                    <h3 class="slider__heading">Ice Coffee</h3>
+                    <p class="slider__description">Our signature cold brew coffee over ice, smooth and refreshing, perfect for a warm afternoon.</p>
+                    <span class="slider__price">$4.50</span>
+                  </div>
+                </div>
+
               </div>
             </div>
 
-            <button type="button" class="slider__btn slider__btn_right"></button>
+            <button type="button" class="slider__btn slider__btn_right" data-action="next"></button>
           </div>
 
           <div class="slider__pagination pagination">
-            <span class="pagination__item pagination__item_active"></span>
-            <span class="pagination__item"></span>
-            <span class="pagination__item"></span>
+            <span class="pagination__item pagination__item_active" data-slide="0"></span>
+            <span class="pagination__item" data-slide="1"></span>
+            <span class="pagination__item" data-slide="2"></span>
           </div>
         </div>
       </section>
